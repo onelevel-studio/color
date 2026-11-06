@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ColorToCode</title>
+</head>
+
+<body>
+
+<main>
+    <h1>🎨 ColorToCode</h1>
+    <p>Sélectionne une couleur pour obtenir ses codes</p>
+
+    <div class="color-box">
+        <input type="color" id="colorPicker" value="#ff0000">
+        <div id="preview"></div>
+    </div>
+
+    <div class="codes">
+        <div class="code" onclick="copy(hex)">HEX : <span id="hex">#FF0000</span></div>
+        <div class="code" onclick="copy(rgb)">RGB : <span id="rgb">rgb(255, 0, 0)</span></div>
+        <div class="code" onclick="copy(hsl)">HSL : <span id="hsl">hsl(0, 100%, 50%)</span></div>
+        <p style="margin-top:10px;color:#666;">Clique sur un code pour le copier</p>
+    </div>
+</main>
+
+<footer>
+    © 2026 <a href="https://moi14212869.github.io/onelevel" target="_blank">Onelevel Studio</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
