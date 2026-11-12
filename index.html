@@ -28,10 +28,14 @@
 </main>
 
 <footer>
-    © 2026 <a href="https://onelevel-studio.github.io" target="_blank">Onelevel Studio</a>
+    © <span id="year">2026</span> <a href="https://onelevel-studio.github.io" target="_blank">Onelevel Studio</a>
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
